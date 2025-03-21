@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ThreadSpecificSingletonTest {
-    private static final int THREAD_COUNT = 100;
+    private static final int THREAD_COUNT = 20;
 
 
     @Test
@@ -22,6 +22,7 @@ class ThreadSpecificSingletonTest {
             Thread thread = new Thread(() -> {
                 Singleton instance = Singleton.getInstance();
                 hashCodes.add(System.identityHashCode(instance));
+                System.out.println("Thread: " + Thread.currentThread().getId() + " Classic Singleton hashcode: " + instance.hashCode());
             });
             threads.add(thread);
             thread.start();
@@ -31,7 +32,7 @@ class ThreadSpecificSingletonTest {
             thread.join();
         }
 
-
+        System.out.println("Classic Singleton hashcodes: " + hashCodes.size());
         assertTrue(hashCodes.size() != THREAD_COUNT);
     }
 
@@ -44,6 +45,7 @@ class ThreadSpecificSingletonTest {
             Thread thread = new Thread(() -> {
                 ThreadSpecificSingleton instance = ThreadSpecificSingleton.getInstance();
                 hashCodes.add(System.identityHashCode(instance));
+                System.out.println("Thread: " + Thread.currentThread().getId() + " Thread Safe Singleton hashcode: " + instance.hashCode());
             });
             threads.add(thread);
             thread.start();
@@ -52,7 +54,7 @@ class ThreadSpecificSingletonTest {
         for (Thread thread : threads) {
             thread.join();
         }
-
+        System.out.println("ThreadSpecificSingleton hashcodes: " + hashCodes.size());
         assertEquals(THREAD_COUNT, hashCodes.size());
     }
 

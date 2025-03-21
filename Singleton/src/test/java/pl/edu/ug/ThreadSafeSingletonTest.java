@@ -1,6 +1,7 @@
 package pl.edu.ug;
 
 import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -32,6 +33,7 @@ class ThreadSafeSingletonTest {
         }
 
         System.out.println("Unique instances for Classic Singleton: " + hashCodes.size());
+        System.out.println("Classic Singleton hashcodes: " + hashCodes);
         assertTrue(hashCodes.size() > 1);
     }
 
@@ -54,6 +56,7 @@ class ThreadSafeSingletonTest {
         }
 
         System.out.println("Unique instances for Thread Safe Singleton: " + hashCodes.size());
+        System.out.println("Thread Safe hashcodes: " + hashCodes);
         assertTrue(hashCodes.size() == 1);
     }
 
