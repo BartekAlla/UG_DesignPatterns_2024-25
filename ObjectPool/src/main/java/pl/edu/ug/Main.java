@@ -1,16 +1,16 @@
 package pl.edu.ug;
 
 import pl.edu.ug.builder.ComputationTaskBuilder;
-import pl.edu.ug.computation.AdditionComputation;
-import pl.edu.ug.computation.MultiplicationComputation;
-import pl.edu.ug.computation.PowerComputation;
-import pl.edu.ug.pool.ComputationPool;
+import pl.edu.ug.computation.CylinderVolume;
+import pl.edu.ug.computation.SphereSurfaceArea;
+import pl.edu.ug.computation.CircleCircumference;
+import pl.edu.ug.computation.ComputationPool;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        ComputationPool<AdditionComputation> addPool = new ComputationPool<>(new AdditionComputation(), 3);
-        ComputationPool<MultiplicationComputation> mulPool = new ComputationPool<>(new MultiplicationComputation(), 3);
-        ComputationPool<PowerComputation> powPool = new ComputationPool<>(new PowerComputation(), 3);
+        ComputationPool<CylinderVolume> addPool = new ComputationPool<>(new CylinderVolume(), 3);
+        ComputationPool<SphereSurfaceArea> mulPool = new ComputationPool<>(new SphereSurfaceArea(), 3);
+        ComputationPool<CircleCircumference> powPool = new ComputationPool<>(new CircleCircumference(), 3);
 
         int numThreads = 10;
         Thread[] threads = new Thread[numThreads];

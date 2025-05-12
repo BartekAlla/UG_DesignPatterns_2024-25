@@ -1,7 +1,7 @@
 package pl.edu.ug.builder;
 
 import pl.edu.ug.computation.ComputationObject;
-import pl.edu.ug.pool.ComputationPool;
+import pl.edu.ug.computation.ComputationPool;
 
 import java.util.ArrayList;
 import java.util.List;

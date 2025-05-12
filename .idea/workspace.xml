@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Update without pool">
-      <change afterPath="$PROJECT_DIR$/ObjectPool/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/builder/ComputationTaskBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/AdditionComputation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/ComputationObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/MultiplicationComputation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/PowerComputation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/pool/ComputationFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/pool/ComputationPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/ComputationalPoolTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Pool started">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Singleton/file.text" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Singleton/singleton.ser" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,40 +49,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Application.ObjectPoolMain.executor": "Run",
-    "Application.pl.edu.ug.Main.executor": "Run",
-    "JUnit.All in Singleton.executor": "Run",
-    "JUnit.ComputationalPoolTests.executor": "Run",
-    "JUnit.SerializableSingletonTest.executor": "Run",
-    "JUnit.ThreadSafeSingletonTest.compareSingletonPerformance.executor": "Run",
-    "JUnit.ThreadSafeSingletonTest.testSingletonConcurrency.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "settings.sync",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ObjectPoolMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.pl.edu.ug.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Singleton.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComputationalPoolTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SerializableSingletonTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ThreadSafeSingletonTest.compareSingletonPerformance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ThreadSafeSingletonTest.testSingletonConcurrency.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/balla/IdeaProjects/UG_DesignPatterns_2024-25&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\balla\IdeaProjects\UG_DesignPatterns_2024-25\ObjectPool" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComputationalPoolTests">
+  <component name="RunManager" selected="Application.pl.edu.ug.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="ObjectPool" />
@@ -166,9 +152,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ComputationalPoolTests" />
         <item itemvalue="Application.pl.edu.ug.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ComputationalPoolTests" />
         <item itemvalue="JUnit.ThreadSafeSingletonTest.compareSingletonPerformance" />
         <item itemvalue="JUnit.ThreadSafeSingletonTest.testSingletonConcurrency" />
       </list>
@@ -191,7 +177,9 @@
       <option name="presentableId" value="Default" />
       <updated>1745505976719</updated>
       <workItem from="1745505977852" duration="161000" />
-      <workItem from="1745506142779" duration="7688000" />
+      <workItem from="1745506142779" duration="8922000" />
+      <workItem from="1747074259819" duration="229000" />
+      <workItem from="1747074531539" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="Update without pool">
       <option name="closed" value="true" />
@@ -201,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745506914853</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Pool started">
+      <option name="closed" value="true" />
+      <created>1745517315278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745517315278</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +205,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update without pool" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update without pool" />
+    <MESSAGE value="Pool started" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pool started" />
   </component>
 </project>
