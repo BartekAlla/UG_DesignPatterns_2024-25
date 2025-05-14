@@ -1,6 +1,6 @@
 package pl.edu.ug.computation;
 
-public class CircleCircumference extends ComputationObject {
+public class CircleCircumference extends ComputationObject<CircleCircumference> {
     private final double r;
 
     public CircleCircumference(double r) {

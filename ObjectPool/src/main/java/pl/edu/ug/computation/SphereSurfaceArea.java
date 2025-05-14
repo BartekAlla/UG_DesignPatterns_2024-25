@@ -1,6 +1,6 @@
 package pl.edu.ug.computation;
 
-public class SphereSurfaceArea extends ComputationObject {
+public class SphereSurfaceArea extends ComputationObject<SphereSurfaceArea> {
     private final double r;
 
     public SphereSurfaceArea(double r) {

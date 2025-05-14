@@ -1,14 +1,14 @@
 package pl.edu.ug.computation;
 
-import java.util.HashMap;
+
 import java.util.Map;
-import java.util.Queue;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class ComputationPool<T extends ComputationObject<T>> {
     private final ConcurrentLinkedQueue<T> pool = new ConcurrentLinkedQueue<>();
     private final T prototype;
-    private static final Map<Class<?>, ComputationPool<?>> instances = new HashMap<>();
+    private static final Map<Class<?>, ComputationPool<?>> instances = new ConcurrentHashMap<>();
 
     private ComputationPool(T prototype) {
         this.prototype = prototype;

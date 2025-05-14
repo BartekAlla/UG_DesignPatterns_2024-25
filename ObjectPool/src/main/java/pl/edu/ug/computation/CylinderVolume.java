@@ -1,6 +1,6 @@
 package pl.edu.ug.computation;
 
-public class CylinderVolume extends ComputationObject {
+public class CylinderVolume extends ComputationObject<CylinderVolume> {
     private final double r, h;
 
     public CylinderVolume(double r, double h) {
