@@ -17,7 +17,7 @@ public class CylinderVolume extends ComputationObject {
     }
 
     @Override
-    public double calculate() {
+    public double compute() {
         return Math.PI * r * r * h;
     }
 }

@@ -31,4 +31,7 @@ public class ComputationPool<T extends ComputationObject<T>> {
         this.pool.offer(obj);
     }
 
+    public int size() {
+        return pool.size();
+    }
 }

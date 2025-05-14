@@ -17,7 +17,7 @@ public class SphereSurfaceArea extends ComputationObject {
     }
 
     @Override
-    public double calculate() {
+    public double compute() {
         return 4 * Math.PI * r * r;
     }
 }

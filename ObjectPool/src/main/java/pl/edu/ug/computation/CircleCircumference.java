@@ -17,7 +17,7 @@ public class CircleCircumference extends ComputationObject {
     }
 
     @Override
-    public double calculate() {
+    public double compute() {
         return 2 * Math.PI * r;
     }
 }
