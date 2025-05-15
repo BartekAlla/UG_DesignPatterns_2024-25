@@ -1,4 +1,4 @@
-package pl.edu.ug.computation;
+package pl.edu.ug.thread_builder.computation;
 
 
 public abstract class ComputationObject<T> implements Cloneable {

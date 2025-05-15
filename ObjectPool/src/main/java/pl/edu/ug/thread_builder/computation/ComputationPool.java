@@ -1,15 +1,17 @@
 
-package pl.edu.ug.computation;
+package pl.edu.ug.thread_builder.computation;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class ComputationPool<T extends ComputationObject<T>> {
     private final ConcurrentLinkedQueue<T> pool = new ConcurrentLinkedQueue<>();
     private final T prototype;
     private final int maxSize;
     private static final Map<Class<?>, ComputationPool<?>> instances = new ConcurrentHashMap<>();
+    private final AtomicInteger createdObjects = new AtomicInteger(); // DODAJ TO
 
     private ComputationPool(T prototype, int maxSize) {
         this.prototype = prototype;
@@ -27,6 +29,7 @@ public class ComputationPool<T extends ComputationObject<T>> {
     public T acquire() {
         T obj = pool.poll();
         if (obj == null) {
+            createdObjects.incrementAndGet();
             return prototype.clone();
         }
         return obj;
@@ -45,5 +48,11 @@ public class ComputationPool<T extends ComputationObject<T>> {
 
     public int getMaxSize() {
         return maxSize;
+    }
+    public int getCreatedObjectsCount() {
+        return createdObjects.get();
+    }
+    public static void resetAll() {
+        instances.clear();
     }
 }

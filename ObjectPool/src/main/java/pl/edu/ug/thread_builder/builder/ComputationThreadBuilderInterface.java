@@ -1,6 +1,6 @@
-package pl.edu.ug.builder;
+package pl.edu.ug.thread_builder.builder;
 
-import pl.edu.ug.computation.ComputationObject;
+import pl.edu.ug.thread_builder.computation.ComputationObject;
 
 public interface ComputationThreadBuilderInterface<
         A extends ComputationObject<A>,

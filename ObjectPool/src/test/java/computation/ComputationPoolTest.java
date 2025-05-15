@@ -1,8 +1,8 @@
 package computation;
 
 import org.junit.jupiter.api.Test;
-import pl.edu.ug.computation.CircleCircumference;
-import pl.edu.ug.computation.ComputationPool;
+import pl.edu.ug.thread_builder.computation.CircleCircumference;
+import pl.edu.ug.thread_builder.computation.ComputationPool;
 
 import static org.junit.jupiter.api.Assertions.*;
 

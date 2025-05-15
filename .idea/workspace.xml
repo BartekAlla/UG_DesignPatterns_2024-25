@@ -4,26 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Thread builder and pool updated">
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/benchmarks/BuilderComputationStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/computation/CircleCircumferenceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/computation/ComputationPoolTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/computation/CylinderVolumeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/computation/SphereSurfaceAreaTest.java" afterDir="false" />
+    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Simple tests, simple statistics">
+      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/statistics/BuilderComputationStats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/benchmarks/BuilderComputationStats.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/builder/ComputationThreadBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/builder/ComputationThreadBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/builder/ComputationThreadDirector.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/builder/ComputationThreadDirector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/ComputationPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/ComputationPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/src/test/java/ComputationalPoolTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/builder/ComputationTaskBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/AdditionComputation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/ComputationObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/ComputationObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/MultiplicationComputation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/PowerComputation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/pool/ComputationFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/pool/ComputationPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/builder/ComputationThreadBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/builder/ComputationThreadBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/builder/ComputationThreadDirector.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/builder/ComputationThreadDirector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/ComputationPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/ComputationPool.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +90,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -215,7 +207,7 @@
       <workItem from="1747074259819" duration="229000" />
       <workItem from="1747074531539" duration="50000" />
       <workItem from="1747074583913" duration="9581000" />
-      <workItem from="1747248516128" duration="15329000" />
+      <workItem from="1747248516128" duration="23186000" />
     </task>
     <task id="LOCAL-00001" summary="Update without pool">
       <option name="closed" value="true" />
@@ -257,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747260287453</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Simple tests, simple statistics">
+      <option name="closed" value="true" />
+      <created>1747336906386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747336906386</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +269,7 @@
     <MESSAGE value="Refactor: Implement ComputationObject and compatible object pool with Java 17" />
     <MESSAGE value="Thread Director, Thread builder interface" />
     <MESSAGE value="Thread builder and pool updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thread builder and pool updated" />
+    <MESSAGE value="Simple tests, simple statistics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple tests, simple statistics" />
   </component>
 </project>

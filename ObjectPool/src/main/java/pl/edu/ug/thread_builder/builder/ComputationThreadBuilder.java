@@ -1,7 +1,9 @@
-package pl.edu.ug.builder;
+package pl.edu.ug.thread_builder.builder;
 
 
-import pl.edu.ug.benchmarks.BuilderComputationStats;
+import pl.edu.ug.thread_builder.computation.ComputationObject;
+import pl.edu.ug.thread_builder.computation.ComputationPool;
+import pl.edu.ug.thread_builder.statistics.BuilderComputationStats;
 import pl.edu.ug.computation.*;
 
 import java.util.ArrayList;
@@ -49,30 +51,44 @@ public class ComputationThreadBuilder<
     @Override
     public Thread buildThread() {
         return new Thread(() -> {
-            ComputationPool<A> poolA = ComputationPool.getInstance(prototypeA, 30);
-            ComputationPool<B> poolB = ComputationPool.getInstance(prototypeB, 30);
-            ComputationPool<C> poolC = ComputationPool.getInstance(prototypeC, 30);
+            ComputationPool<A> poolA = ComputationPool.getInstance(prototypeA, 9999999);
+            ComputationPool<B> poolB = ComputationPool.getInstance(prototypeB, 9999999);
+            ComputationPool<C> poolC = ComputationPool.getInstance(prototypeC, 9999999);
+
+            stats.setPools(poolA, poolB, poolC);
 
             List<A> listA = new ArrayList<>();
             List<B> listB = new ArrayList<>();
             List<C> listC = new ArrayList<>();
-            try {
+
+           // try {
                 for (int i = 0; i < countA; i++) listA.add(poolA.acquire());
                 for (int i = 0; i < countB; i++) listB.add(poolB.acquire());
                 for (int i = 0; i < countC; i++) listC.add(poolC.acquire());
 
-                double resultA = listA.stream().mapToDouble(A::compute).sum();
-                double resultB = listB.stream().mapToDouble(B::compute).sum();
-                double resultC = listC.stream().mapToDouble(C::compute).sum();
+                long startA = System.nanoTime();
+                listA.forEach(A::compute);
+//                long timeA = System.nanoTime() - startA;
 
+                long startB = System.nanoTime();
+                listB.forEach(B::compute);
+//                long timeB = System.nanoTime() - startB;
 
-                stats.report(resultA, countA, resultB, countB, resultC, countC);
-            } finally {
+                long startC = System.nanoTime();
+                listC.forEach(C::compute);
+//                long timeC = System.nanoTime() - startC;
+
+               // stats.reportTimeAndCreations(timeA, countA, timeB, countB, timeC, countC);
+
+           // } finally {
                 listA.forEach(poolA::release);
+            long timeA = System.nanoTime() - startA;
                 listB.forEach(poolB::release);
+            long timeB = System.nanoTime() - startB;
                 listC.forEach(poolC::release);
-
-            }
+            long timeC = System.nanoTime() - startC;
+            stats.reportTimeAndCreations(timeA, countA, timeB, countB, timeC, countC);
+           // }
         });
     }
 }

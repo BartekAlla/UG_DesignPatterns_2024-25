@@ -1,4 +1,4 @@
-package pl.edu.ug.computation;
+package pl.edu.ug.thread_builder.computation;
 
 public class CylinderVolume extends ComputationObject<CylinderVolume> {
     private final double r, h;
