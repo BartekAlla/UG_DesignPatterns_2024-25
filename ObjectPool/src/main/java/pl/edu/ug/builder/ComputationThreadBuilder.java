@@ -1,6 +1,7 @@
 package pl.edu.ug.builder;
 
 
+import pl.edu.ug.benchmarks.BuilderComputationStats;
 import pl.edu.ug.computation.*;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ public class ComputationThreadBuilder<
         A extends ComputationObject<A>,
         B extends ComputationObject<B>,
         C extends ComputationObject<C>>
-        implements ComputationThreadBuilderInterface<A, B, C>{
+        implements ComputationThreadBuilderInterface<A, B, C> {
 
     private A prototypeA;
     private int countA;
@@ -20,6 +21,12 @@ public class ComputationThreadBuilder<
 
     private C prototypeC;
     private int countC;
+
+    private final BuilderComputationStats stats;
+
+    public ComputationThreadBuilder(BuilderComputationStats stats) {
+        this.stats = stats;
+    }
 
     @Override
     public void setComponentA(A obj, int amount) {
@@ -38,35 +45,34 @@ public class ComputationThreadBuilder<
         this.prototypeC = obj;
         this.countC = amount;
     }
+
     @Override
     public Thread buildThread() {
         return new Thread(() -> {
-            ComputationPool<A> poolA = ComputationPool.getInstance(prototypeA);
-            ComputationPool<B> poolB = ComputationPool.getInstance(prototypeB);
-            ComputationPool<C> poolC = ComputationPool.getInstance(prototypeC);
+            ComputationPool<A> poolA = ComputationPool.getInstance(prototypeA, 30);
+            ComputationPool<B> poolB = ComputationPool.getInstance(prototypeB, 30);
+            ComputationPool<C> poolC = ComputationPool.getInstance(prototypeC, 30);
 
             List<A> listA = new ArrayList<>();
             List<B> listB = new ArrayList<>();
             List<C> listC = new ArrayList<>();
+            try {
+                for (int i = 0; i < countA; i++) listA.add(poolA.acquire());
+                for (int i = 0; i < countB; i++) listB.add(poolB.acquire());
+                for (int i = 0; i < countC; i++) listC.add(poolC.acquire());
 
-            for (int i = 0; i < countA; i++) listA.add(poolA.acquire());
-            for (int i = 0; i < countB; i++) listB.add(poolB.acquire());
-            for (int i = 0; i < countC; i++) listC.add(poolC.acquire());
+                double resultA = listA.stream().mapToDouble(A::compute).sum();
+                double resultB = listB.stream().mapToDouble(B::compute).sum();
+                double resultC = listC.stream().mapToDouble(C::compute).sum();
 
-            double resultA = listA.stream().mapToDouble(A::compute).sum();
-            double resultB = listB.stream().mapToDouble(B::compute).sum();
-            double resultC = listC.stream().mapToDouble(C::compute).sum();
 
-            double finalResult = resultA + resultB + resultC;
+                stats.report(resultA, countA, resultB, countB, resultC, countC);
+            } finally {
+                listA.forEach(poolA::release);
+                listB.forEach(poolB::release);
+                listC.forEach(poolC::release);
 
-            System.out.printf(
-                    "Thread %s -> CircleCircumference: %.2f (%d), SphereSurfaceArea: %.2f (%d), CylinderVolume: %.2f (%d), TOTAL: %.2f%n ",
-                    this.hashCode(), resultA, poolA.size(), resultB, poolB.size(), resultC, poolC.size(), finalResult
-            );
-
-            listA.forEach(poolA::release);
-            listB.forEach(poolB::release);
-            listC.forEach(poolC::release);
+            }
         });
     }
 }

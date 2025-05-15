@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Thread Director, Thread builder interface">
+    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Thread builder and pool updated">
+      <change afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/benchmarks/BuilderComputationStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/computation/CircleCircumferenceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/computation/ComputationPoolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/computation/CylinderVolumeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/computation/SphereSurfaceAreaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/builder/ComputationThreadBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/builder/ComputationThreadBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/CircleCircumference.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/CircleCircumference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/CylinderVolume.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/CylinderVolume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/SphereSurfaceArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/SphereSurfaceArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/ComputationPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/computation/ComputationPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/src/test/java/ComputationalPoolTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/builder/ComputationTaskBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/AdditionComputation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/ComputationObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/ComputationObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/MultiplicationComputation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/PowerComputation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/pool/ComputationFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/pool/ComputationPool.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,43 +67,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ObjectPoolMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.pl.edu.ug.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in Singleton.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ComputationalPoolTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SerializableSingletonTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ThreadSafeSingletonTest.compareSingletonPerformance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ThreadSafeSingletonTest.testSingletonConcurrency.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/balla/Downloads/02-obliczenia-w-puli-mikolajczy01&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Application.ObjectPoolMain.executor": "Run",
+    "Application.pl.edu.ug.Main.executor": "Run",
+    "JUnit.All in Singleton.executor": "Run",
+    "JUnit.CircleCircumferenceTest.testCompute.executor": "Run",
+    "JUnit.ComputationPoolTest.executor": "Run",
+    "JUnit.ComputationPoolTest.testAcquireAndRelease.executor": "Run",
+    "JUnit.ComputationThreadBuilderTest.testThreadExecution.executor": "Run",
+    "JUnit.ComputationalPoolTests.executor": "Run",
+    "JUnit.CylinderVolumeTest.testCompute.executor": "Run",
+    "JUnit.SerializableSingletonTest.executor": "Run",
+    "JUnit.ThreadSafeSingletonTest.compareSingletonPerformance.executor": "Run",
+    "JUnit.ThreadSafeSingletonTest.testSingletonConcurrency.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/balla/Downloads/02-obliczenia-w-puli-mikolajczy01",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\balla\IdeaProjects\UG_DesignPatterns_2024-25\ObjectPool" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.pl.edu.ug.Main">
-    <configuration name="pl.edu.ug.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edu.ug.Main" />
       <module name="ObjectPool" />
       <extension name="coverage">
@@ -103,74 +121,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SerializableSingletonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Singleton" />
+    <configuration name="ComputationPoolTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ObjectPool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.edu.ug.*" />
+          <option name="PATTERN" value="computation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.ug" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.ug.SerializableSingletonTest" />
+      <option name="PACKAGE_NAME" value="computation" />
+      <option name="MAIN_CLASS_NAME" value="computation.ComputationPoolTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadSafeSingletonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Singleton" />
+    <configuration name="ComputationPoolTest.testAcquireAndRelease" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ObjectPool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.edu.ug.*" />
+          <option name="PATTERN" value="computation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.ug" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.ug.ThreadSafeSingletonTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadSafeSingletonTest.testSingletonConcurrency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Singleton" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.edu.ug.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.ug" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.ug.ThreadSafeSingletonTest" />
-      <option name="METHOD_NAME" value="testSingletonConcurrency" />
+      <option name="PACKAGE_NAME" value="computation" />
+      <option name="MAIN_CLASS_NAME" value="computation.ComputationPoolTest" />
+      <option name="METHOD_NAME" value="testAcquireAndRelease" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadSpecificSingletonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Singleton" />
+    <configuration name="ComputationThreadBuilderTest.testThreadExecution" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ObjectPool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.edu.ug.*" />
+          <option name="PATTERN" value="builder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.edu.ug" />
-      <option name="MAIN_CLASS_NAME" value="pl.edu.ug.ThreadSpecificSingletonTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="builder" />
+      <option name="MAIN_CLASS_NAME" value="builder.ComputationThreadBuilderTest" />
+      <option name="METHOD_NAME" value="testThreadExecution" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CylinderVolumeTest.testComputeCylinderVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ObjectPool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="computation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="computation" />
+      <option name="MAIN_CLASS_NAME" value="computation.CylinderVolumeTest" />
+      <option name="METHOD_NAME" value="testComputeCylinderVolume" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.pl.edu.ug.Main" />
-        <item itemvalue="JUnit.ThreadSpecificSingletonTest" />
-        <item itemvalue="JUnit.ThreadSafeSingletonTest.testSingletonConcurrency" />
-        <item itemvalue="JUnit.ThreadSafeSingletonTest" />
-        <item itemvalue="JUnit.SerializableSingletonTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ComputationThreadBuilderTest.testThreadExecution" />
+        <item itemvalue="JUnit.ComputationPoolTest" />
+        <item itemvalue="JUnit.ComputationPoolTest.testAcquireAndRelease" />
+        <item itemvalue="JUnit.CylinderVolumeTest.testComputeCylinderVolume" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +215,7 @@
       <workItem from="1747074259819" duration="229000" />
       <workItem from="1747074531539" duration="50000" />
       <workItem from="1747074583913" duration="9581000" />
-      <workItem from="1747248516128" duration="7663000" />
+      <workItem from="1747248516128" duration="15329000" />
     </task>
     <task id="LOCAL-00001" summary="Update without pool">
       <option name="closed" value="true" />
@@ -229,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747251723297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Thread builder and pool updated">
+      <option name="closed" value="true" />
+      <created>1747260287453</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747260287453</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +268,7 @@
     <MESSAGE value="Pool started" />
     <MESSAGE value="Refactor: Implement ComputationObject and compatible object pool with Java 17" />
     <MESSAGE value="Thread Director, Thread builder interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thread Director, Thread builder interface" />
+    <MESSAGE value="Thread builder and pool updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thread builder and pool updated" />
   </component>
 </project>

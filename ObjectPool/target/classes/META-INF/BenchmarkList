@@ -1,0 +1,1 @@
+JMH S 41 pl.edu.ug.benchmarks.BuilderPoolBenchmark S 85 pl.edu.ug.benchmarks.jmh_generated.BuilderPoolBenchmark_testPooledComputation_jmhTest S 21 testPooledComputation S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E M 2 11 threadCount 3 16 xAAMAADAwAA===== 16 1AAMAADAwAA===== 16 xAAMAADAwAAMAA== 8 workload 3 8 xAAMAA== 8 xAAMAADA 16 xAAMAADAwAA===== U 12 MILLISECONDS E E 
