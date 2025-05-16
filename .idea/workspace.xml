@@ -4,33 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Comparison of poool with prototype and factory">
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/factories/FactoryComputationThreadBuildTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/prototypes/PrototypeComputationThreadBuilderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Updated tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/factories/statistics/FactoryComputationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/factories/statistics/FactoryComputationStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/prototypes/statistics/PrototypeComputationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/prototypes/statistics/PrototypeComputationStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/src/test/java/factories/FactoryPoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/factories/FactoryPoolTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/src/test/java/prototypes/PrototypePoolTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/prototypes/PrototypePoolTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/src/test/java/factories/FactoryComputationThreadBuildTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/factories/FactoryComputationThreadBuildTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/builder/ComputationThreadBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/builder/ComputationThreadBuilderInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/builder/ComputationThreadDirector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/CircleCircumference.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/ComputationPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/CylinderVolume.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/computation/SphereSurfaceArea.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/factories/statistics/FactoryComputationStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/factories/statistics/FactoryComputationStats.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/prototypes/statistics/PrototypeComputationStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/prototypes/statistics/PrototypeComputationStats.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/statistics/BuilderComputationStats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/test-classes/builder/ComputationThreadBuilderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/test-classes/computation/CircleCircumferenceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/test-classes/computation/ComputationPoolTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/test-classes/computation/CylinderVolumeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/test-classes/computation/SphereSurfaceAreaTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +61,7 @@
     "Application.pl.edu.ug.Main.executor": "Run",
     "JUnit.All in Singleton.executor": "Run",
     "JUnit.ComputationalPoolTests.executor": "Run",
+    "JUnit.FactoryComputationThreadBuildTest.executor": "Run",
     "JUnit.FactoryComputationThreadBuildTest.testBuildThreadAndStats.executor": "Run",
     "JUnit.FactoryPoolTest.executor": "Run",
     "JUnit.PrototypeCircleCircumferenceTest.executor": "Run",
@@ -116,7 +96,7 @@
       <recent name="C:\Users\balla\IdeaProjects\UG_DesignPatterns_2024-25\ObjectPool" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FactoryComputationThreadBuildTest.testBuildThreadAndStats">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edu.ug.Main" />
       <module name="ObjectPool" />
@@ -126,6 +106,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FactoryComputationThreadBuildTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ObjectPool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="factories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="factories" />
+      <option name="MAIN_CLASS_NAME" value="factories.FactoryComputationThreadBuildTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,21 +156,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrototypeComputationThreadBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ObjectPool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="prototypes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="prototypes" />
-      <option name="MAIN_CLASS_NAME" value="prototypes.PrototypeComputationThreadBuilderTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PrototypeComputationThreadBuilderTest.testMultiThreadedPoolSafety" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ObjectPool" />
       <extension name="coverage">
@@ -194,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.FactoryComputationThreadBuildTest" />
         <item itemvalue="JUnit.FactoryComputationThreadBuildTest.testBuildThreadAndStats" />
         <item itemvalue="JUnit.FactoryPoolTest" />
         <item itemvalue="JUnit.PrototypeComputationThreadBuilderTest.testMultiThreadedPoolSafety" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.PrototypeComputationThreadBuilderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747396480047</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated tests">
+      <option name="closed" value="true" />
+      <created>1747412192582</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747412192582</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +237,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update without pool" />
     <MESSAGE value="Comparison of poool with prototype and factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comparison of poool with prototype and factory" />
+    <MESSAGE value="Updated tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated tests" />
   </component>
 </project>

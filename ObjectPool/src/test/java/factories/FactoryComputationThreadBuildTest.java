@@ -4,7 +4,6 @@ package factories;
 import org.junit.jupiter.api.Test;
 import pl.edu.ug.factories.builder.FactoryComputationThreadBuilder;
 import pl.edu.ug.factories.computation.FactoryCircleCircumference;
-import pl.edu.ug.factories.computation.FactoryComputationPool;
 import pl.edu.ug.factories.computation.FactoryCylinderVolume;
 import pl.edu.ug.factories.computation.FactorySphereSurfaceArea;
 import pl.edu.ug.factories.statistics.FactoryComputationStats;
@@ -32,9 +31,9 @@ public class FactoryComputationThreadBuildTest {
         t.start();
         t.join();
 
-        assertTrue(stats.getClass().getDeclaredField("timeA").trySetAccessible());
-        assertTrue(stats.getClass().getDeclaredField("timeB").trySetAccessible());
-        assertTrue(stats.getClass().getDeclaredField("timeC").trySetAccessible());
+        assertTrue(stats.getTimeA() > 0);
+        assertTrue(stats.getTimeB() > 0);
+        assertTrue(stats.getTimeC() > 0);
 
 
         assertTrue(stats.getPoolA().getCreatedObjectsCount() <= 3);

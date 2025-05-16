@@ -3,7 +3,7 @@ package computation;
 import org.junit.jupiter.api.Test;
 import pl.edu.ug.prototypes.computation.PrototypeCircleCircumference;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PrototypeCircleCircumferenceTest {
 

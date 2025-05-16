@@ -2,18 +2,15 @@ package pl.edu.ug;
 
 import pl.edu.ug.factories.builder.FactoryComputationThreadBuilder;
 import pl.edu.ug.factories.builder.FactoryComputationThreadConfiguration;
-import pl.edu.ug.factories.computation.FactoryCircleCircumference;
 import pl.edu.ug.factories.computation.FactoryComputationPool;
-import pl.edu.ug.factories.computation.FactoryCylinderVolume;
-import pl.edu.ug.factories.computation.FactorySphereSurfaceArea;
 import pl.edu.ug.factories.statistics.FactoryComputationStats;
-import pl.edu.ug.prototypes.computation.PrototypeComputationPool;
-import pl.edu.ug.prototypes.statistics.PrototypeComputationStats;
 import pl.edu.ug.prototypes.builder.PrototypeComputationThreadBuilder;
 import pl.edu.ug.prototypes.builder.PrototypeComputationThreadConfiguration;
+import pl.edu.ug.prototypes.computation.PrototypeCircleCircumference;
+import pl.edu.ug.prototypes.computation.PrototypeComputationPool;
 import pl.edu.ug.prototypes.computation.PrototypeCylinderVolume;
 import pl.edu.ug.prototypes.computation.PrototypeSphereSurfaceArea;
-import pl.edu.ug.prototypes.computation.PrototypeCircleCircumference;
+import pl.edu.ug.prototypes.statistics.PrototypeComputationStats;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,15 +19,12 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         prototypeExperiment(5000);
-        PrototypeComputationPool.resetAll();
         System.gc();
         Thread.sleep(500);
         prototypeExperiment(10000);
-        PrototypeComputationPool.resetAll();
         System.gc();
         Thread.sleep(500);
         prototypeExperiment(25000);
-        PrototypeComputationPool.resetAll();
         System.gc();
         Thread.sleep(500);
         factoryExperiment(5000);

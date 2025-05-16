@@ -1,8 +1,8 @@
 package pl.edu.ug.factories.builder;
 
 
-import pl.edu.ug.prototypes.computation.PrototypeComputationObject;
 import pl.edu.ug.factories.computation.FactoryComputationObject;
+import pl.edu.ug.prototypes.computation.PrototypeComputationObject;
 
 public interface FactoryComputationThreadBuilderInterface<
         A extends PrototypeComputationObject<A>,

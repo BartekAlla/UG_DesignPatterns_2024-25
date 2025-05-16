@@ -5,7 +5,6 @@ import pl.edu.ug.prototypes.computation.PrototypeComputationObject;
 import pl.edu.ug.prototypes.computation.PrototypeComputationPool;
 import pl.edu.ug.prototypes.statistics.PrototypeComputationStats;
 
-
 import java.util.ArrayList;
 import java.util.List;
 

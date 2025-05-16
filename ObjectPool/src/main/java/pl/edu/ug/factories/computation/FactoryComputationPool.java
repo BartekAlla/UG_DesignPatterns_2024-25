@@ -35,17 +35,28 @@ public class FactoryComputationPool<T extends PrototypeComputationObject<T>> {
     }
 
     public void releaseObject(T obj) {
-      this.pool.offer(obj);
+        this.pool.offer(obj);
 
     }
 
     public int size() {
         return this.pool.size();
     }
+
     public int getCreatedObjectsCount() {
         return createdObjects.get();
     }
+
     public static void resetAll() {
+
+        for (FactoryComputationPool<?> pool : instances.values()) {
+            pool.reset();
+        }
         instances.clear();
+    }
+
+    private void reset() {
+        pool.clear();
+        createdObjects.set(0);
     }
 }

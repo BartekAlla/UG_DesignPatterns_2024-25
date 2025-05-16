@@ -53,6 +53,14 @@ public class PrototypeComputationPool<T extends PrototypeComputationObject<T>> {
         return createdObjects.get();
     }
     public static void resetAll() {
+        for (PrototypeComputationPool<?> pool : instances.values()) {
+            pool.reset();
+        }
         instances.clear();
+    }
+
+    private void reset() {
+        pool.clear();
+        createdObjects.set(0);
     }
 }

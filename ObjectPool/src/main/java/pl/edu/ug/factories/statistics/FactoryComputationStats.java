@@ -2,7 +2,6 @@ package pl.edu.ug.factories.statistics;
 
 
 import pl.edu.ug.factories.computation.FactoryComputationPool;
-import pl.edu.ug.prototypes.computation.PrototypeComputationPool;
 
 import java.util.concurrent.atomic.LongAdder;
 

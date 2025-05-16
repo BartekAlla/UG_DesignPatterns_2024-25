@@ -1,13 +1,10 @@
 package pl.edu.ug.factories.builder;
 
 
-import pl.edu.ug.factories.statistics.FactoryComputationStats;
-import pl.edu.ug.prototypes.computation.PrototypeComputationObject;
 import pl.edu.ug.factories.computation.FactoryComputationObject;
 import pl.edu.ug.factories.computation.FactoryComputationPool;
-import pl.edu.ug.prototypes.computation.PrototypeComputationPool;
-import pl.edu.ug.prototypes.statistics.PrototypeComputationStats;
-
+import pl.edu.ug.factories.statistics.FactoryComputationStats;
+import pl.edu.ug.prototypes.computation.PrototypeComputationObject;
 
 import java.util.ArrayList;
 import java.util.List;

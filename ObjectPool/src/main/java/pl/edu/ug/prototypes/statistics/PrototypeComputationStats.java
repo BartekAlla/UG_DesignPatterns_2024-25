@@ -1,6 +1,7 @@
 package pl.edu.ug.prototypes.statistics;
 
 import pl.edu.ug.prototypes.computation.PrototypeComputationPool;
+
 import java.util.concurrent.atomic.LongAdder;
 public class PrototypeComputationStats {
 
