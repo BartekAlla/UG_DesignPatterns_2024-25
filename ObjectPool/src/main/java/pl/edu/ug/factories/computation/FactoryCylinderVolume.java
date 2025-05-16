@@ -9,6 +9,7 @@ public class FactoryCylinderVolume implements FactoryComputationObject<Prototype
         this.r = r;
         this.h = h;
     }
+
     @Override
     public PrototypeCylinderVolume createComputationObject() {
         return new PrototypeCylinderVolume(this.r, this.h);

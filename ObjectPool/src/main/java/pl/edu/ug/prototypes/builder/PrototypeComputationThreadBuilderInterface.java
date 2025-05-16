@@ -8,7 +8,9 @@ public interface PrototypeComputationThreadBuilderInterface<
         C extends PrototypeComputationObject<C>> {
 
     void setComponentA(A obj, int amount);
+
     void setComponentB(B obj, int amount);
+
     void setComponentC(C obj, int amount);
 
     Thread buildThread();

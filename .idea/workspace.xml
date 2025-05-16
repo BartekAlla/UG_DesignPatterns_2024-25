@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Updated tests">
+    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Imports optimization and clearAll method in pools updated so it clears everything">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/src/test/java/factories/FactoryComputationThreadBuildTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/test/java/factories/FactoryComputationThreadBuildTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/factories/statistics/FactoryComputationStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/factories/statistics/FactoryComputationStats.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747412192582</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Imports optimization and clearAll method in pools updated so it clears everything">
+      <option name="closed" value="true" />
+      <created>1747419335764</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747419335764</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +243,7 @@
     <MESSAGE value="Update without pool" />
     <MESSAGE value="Comparison of poool with prototype and factory" />
     <MESSAGE value="Updated tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated tests" />
+    <MESSAGE value="Imports optimization and clearAll method in pools updated so it clears everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="Imports optimization and clearAll method in pools updated so it clears everything" />
   </component>
 </project>

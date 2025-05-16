@@ -10,7 +10,9 @@ public interface FactoryComputationThreadBuilderInterface<
         C extends PrototypeComputationObject<C>> {
 
     void setComponentA(FactoryComputationObject<A> factoryComputationObject, int amount);
+
     void setComponentB(FactoryComputationObject<B> factoryComputationObject, int amount);
+
     void setComponentC(FactoryComputationObject<C> factoryComputationObject, int amount);
 
     Thread buildThread();

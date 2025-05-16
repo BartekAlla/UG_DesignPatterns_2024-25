@@ -18,6 +18,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
+
         prototypeExperiment(5000);
         System.gc();
         Thread.sleep(500);
@@ -60,6 +61,7 @@ public class Main {
         stats.printSummary();
         PrototypeComputationPool.resetAll();
     }
+
     private static void factoryExperiment(int threadCount) throws InterruptedException {
         System.out.println("\n=== Fabric Experiment with " + threadCount + " threads ===");
 

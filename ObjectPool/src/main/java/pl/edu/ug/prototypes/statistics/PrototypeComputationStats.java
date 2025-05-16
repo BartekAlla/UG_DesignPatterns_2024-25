@@ -3,6 +3,7 @@ package pl.edu.ug.prototypes.statistics;
 import pl.edu.ug.prototypes.computation.PrototypeComputationPool;
 
 import java.util.concurrent.atomic.LongAdder;
+
 public class PrototypeComputationStats {
 
     private final LongAdder timeA = new LongAdder();
@@ -17,7 +18,6 @@ public class PrototypeComputationStats {
     private PrototypeComputationPool<?> poolA;
     private PrototypeComputationPool<?> poolB;
     private PrototypeComputationPool<?> poolC;
-
 
 
     public void setPools(PrototypeComputationPool<?> a, PrototypeComputationPool<?> b, PrototypeComputationPool<?> c) {
@@ -67,10 +67,28 @@ public class PrototypeComputationStats {
                 poolC != null ? poolC.getCreatedObjectsCount() : -1,
                 poolC != null ? poolC.size() : -1);
     }
-    public LongAdder getTimeA() {return timeA;}
-    public LongAdder getTimeB() {return timeB;}
-    public LongAdder getTimeC() {return timeC;}
-    public PrototypeComputationPool<?> getPoolA() {return poolA;}
-    public PrototypeComputationPool<?> getPoolB() {return poolB;}
-    public PrototypeComputationPool<?> getPoolC() {return poolC;}
+
+    public LongAdder getTimeA() {
+        return timeA;
+    }
+
+    public LongAdder getTimeB() {
+        return timeB;
+    }
+
+    public LongAdder getTimeC() {
+        return timeC;
+    }
+
+    public PrototypeComputationPool<?> getPoolA() {
+        return poolA;
+    }
+
+    public PrototypeComputationPool<?> getPoolB() {
+        return poolB;
+    }
+
+    public PrototypeComputationPool<?> getPoolC() {
+        return poolC;
+    }
 }

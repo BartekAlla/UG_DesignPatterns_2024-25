@@ -49,9 +49,11 @@ public class PrototypeComputationPool<T extends PrototypeComputationObject<T>> {
     public int getMaxSize() {
         return maxSize;
     }
+
     public int getCreatedObjectsCount() {
         return createdObjects.get();
     }
+
     public static void resetAll() {
         for (PrototypeComputationPool<?> pool : instances.values()) {
             pool.reset();

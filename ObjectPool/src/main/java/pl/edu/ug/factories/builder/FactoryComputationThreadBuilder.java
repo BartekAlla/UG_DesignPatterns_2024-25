@@ -50,7 +50,8 @@ public class FactoryComputationThreadBuilder<
     @Override
     public void setComponentC(FactoryComputationObject<C> factoryComputationObject, int amount) {
         this.factoryC = factoryComputationObject;
-        this.cPool = FactoryComputationPool.getInstance(factoryComputationObject);;
+        this.cPool = FactoryComputationPool.getInstance(factoryComputationObject);
+        ;
         this.countC = amount;
     }
 

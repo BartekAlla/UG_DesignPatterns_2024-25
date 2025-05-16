@@ -60,27 +60,27 @@ public class PrototypeComputationThreadBuilder<
             List<B> listB = new ArrayList<>();
             List<C> listC = new ArrayList<>();
 
-                for (int i = 0; i < countA; i++) listA.add(poolA.acquire());
-                for (int i = 0; i < countB; i++) listB.add(poolB.acquire());
-                for (int i = 0; i < countC; i++) listC.add(poolC.acquire());
+            for (int i = 0; i < countA; i++) listA.add(poolA.acquire());
+            for (int i = 0; i < countB; i++) listB.add(poolB.acquire());
+            for (int i = 0; i < countC; i++) listC.add(poolC.acquire());
 
-                long startA = System.nanoTime();
-                listA.forEach(A::compute);
+            long startA = System.nanoTime();
+            listA.forEach(A::compute);
 
-                long startB = System.nanoTime();
-                listB.forEach(B::compute);
+            long startB = System.nanoTime();
+            listB.forEach(B::compute);
 
-                long startC = System.nanoTime();
-                listC.forEach(C::compute);
+            long startC = System.nanoTime();
+            listC.forEach(C::compute);
 
 
-                listA.forEach(poolA::release);
-                long timeA = System.nanoTime() - startA;
-                listB.forEach(poolB::release);
-                long timeB = System.nanoTime() - startB;
-                listC.forEach(poolC::release);
-                long timeC = System.nanoTime() - startC;
-                stats.reportTimeAndCreations(timeA, countA, timeB, countB, timeC, countC);
+            listA.forEach(poolA::release);
+            long timeA = System.nanoTime() - startA;
+            listB.forEach(poolB::release);
+            long timeB = System.nanoTime() - startB;
+            listC.forEach(poolC::release);
+            long timeC = System.nanoTime() - startC;
+            stats.reportTimeAndCreations(timeA, countA, timeB, countB, timeC, countC);
         });
     }
 }

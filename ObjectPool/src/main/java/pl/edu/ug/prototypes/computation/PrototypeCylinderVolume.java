@@ -7,10 +7,12 @@ public class PrototypeCylinderVolume extends PrototypeComputationObject<Prototyp
         this.r = r;
         this.h = h;
     }
+
     public PrototypeCylinderVolume(PrototypeCylinderVolume target) {
         this.r = target.r;
         this.h = target.h;
     }
+
     @Override
     public PrototypeCylinderVolume clone() {
         return new PrototypeCylinderVolume(this);

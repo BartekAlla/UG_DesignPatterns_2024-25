@@ -32,8 +32,9 @@ public class PrototypeComputationThreadBuilderTest {
         assertTrue(stats.getTimeB().longValue() > 0);
         assertTrue(stats.getTimeC().longValue() > 0);
 
-        assertTrue(((PrototypeComputationPool<?>)stats.getPoolA()).getCreatedObjectsCount() <= 3);
+        assertTrue(((PrototypeComputationPool<?>) stats.getPoolA()).getCreatedObjectsCount() <= 3);
     }
+
     @Test
     void testMultiThreadedPoolSafety() throws InterruptedException {
         PrototypeComputationPool.resetAll();
