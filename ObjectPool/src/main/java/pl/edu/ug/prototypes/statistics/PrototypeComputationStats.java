@@ -66,4 +66,10 @@ public class PrototypeComputationStats {
                 poolC != null ? poolC.getCreatedObjectsCount() : -1,
                 poolC != null ? poolC.size() : -1);
     }
+    public LongAdder getTimeA() {return timeA;}
+    public LongAdder getTimeB() {return timeB;}
+    public LongAdder getTimeC() {return timeC;}
+    public PrototypeComputationPool<?> getPoolA() {return poolA;}
+    public PrototypeComputationPool<?> getPoolB() {return poolB;}
+    public PrototypeComputationPool<?> getPoolC() {return poolC;}
 }

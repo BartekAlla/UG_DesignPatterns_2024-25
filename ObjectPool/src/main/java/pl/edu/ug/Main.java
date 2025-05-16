@@ -22,12 +22,15 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         prototypeExperiment(5000);
+        PrototypeComputationPool.resetAll();
         System.gc();
         Thread.sleep(500);
         prototypeExperiment(10000);
+        PrototypeComputationPool.resetAll();
         System.gc();
         Thread.sleep(500);
         prototypeExperiment(25000);
+        PrototypeComputationPool.resetAll();
         System.gc();
         Thread.sleep(500);
         factoryExperiment(5000);

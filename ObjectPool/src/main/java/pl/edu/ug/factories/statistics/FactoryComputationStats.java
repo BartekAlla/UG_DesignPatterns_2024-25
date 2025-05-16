@@ -22,8 +22,6 @@ public class FactoryComputationStats {
     private FactoryComputationPool<?> poolC;
 
 
-
-
     public void setPools(FactoryComputationPool<?> a, FactoryComputationPool<?> b, FactoryComputationPool<?> c) {
         this.poolA = a;
         this.poolB = b;
@@ -72,4 +70,27 @@ public class FactoryComputationStats {
                 poolC != null ? poolC.size() : -1);
     }
 
+    public long getTimeA() {
+        return timeA.longValue();
+    }
+
+    public long getTimeB() {
+        return timeB.longValue();
+    }
+
+    public long getTimeC() {
+        return timeC.longValue();
+    }
+
+    public FactoryComputationPool<?> getPoolA() {
+        return poolA;
+    }
+
+    public FactoryComputationPool<?> getPoolB() {
+        return poolB;
+    }
+
+    public FactoryComputationPool<?> getPoolC() {
+        return poolC;
+    }
 }
