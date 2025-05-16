@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Imports optimization and clearAll method in pools updated so it clears everything">
+    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Refactor - reformat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/factories/builder/FactoryComputationThreadBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/src/main/java/pl/edu/ug/factories/builder/FactoryComputationThreadBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/factories/builder/FactoryComputationThreadBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/factories/builder/FactoryComputationThreadBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/factories/computation/FactoryCylinderVolume.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/factories/computation/FactoryCylinderVolume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/prototypes/computation/PrototypeComputationPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/prototypes/computation/PrototypeComputationPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/prototypes/computation/PrototypeCylinderVolume.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/prototypes/computation/PrototypeCylinderVolume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/prototypes/statistics/PrototypeComputationStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectPool/target/classes/pl/edu/ug/prototypes/statistics/PrototypeComputationStats.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +99,7 @@
       <recent name="C:\Users\balla\IdeaProjects\UG_DesignPatterns_2024-25\ObjectPool" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.PrototypeSphereSurfaceAreaTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.edu.ug.Main" />
       <module name="ObjectPool" />
@@ -122,60 +128,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FactoryComputationThreadBuildTest.testBuildThreadAndStats" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PrototypeCircleCircumferenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ObjectPool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="factories.*" />
+          <option name="PATTERN" value="computation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="factories" />
-      <option name="MAIN_CLASS_NAME" value="factories.FactoryComputationThreadBuildTest" />
-      <option name="METHOD_NAME" value="testBuildThreadAndStats" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FactoryPoolTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ObjectPool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="factories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="factories" />
-      <option name="MAIN_CLASS_NAME" value="factories.FactoryPoolTest" />
+      <option name="PACKAGE_NAME" value="computation" />
+      <option name="MAIN_CLASS_NAME" value="computation.PrototypeCircleCircumferenceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrototypeComputationThreadBuilderTest.testMultiThreadedPoolSafety" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PrototypeCylinderVolumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ObjectPool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="prototypes.*" />
+          <option name="PATTERN" value="computation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="prototypes" />
-      <option name="MAIN_CLASS_NAME" value="prototypes.PrototypeComputationThreadBuilderTest" />
-      <option name="METHOD_NAME" value="testMultiThreadedPoolSafety" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="computation" />
+      <option name="MAIN_CLASS_NAME" value="computation.PrototypeCylinderVolumeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrototypeSphereSurfaceAreaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ObjectPool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="computation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="computation" />
+      <option name="MAIN_CLASS_NAME" value="computation.PrototypeSphereSurfaceAreaTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrototypeSphereSurfaceAreaTest" />
+        <item itemvalue="JUnit.PrototypeCylinderVolumeTest" />
+        <item itemvalue="JUnit.PrototypeCircleCircumferenceTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.FactoryComputationThreadBuildTest" />
-        <item itemvalue="JUnit.FactoryComputationThreadBuildTest.testBuildThreadAndStats" />
-        <item itemvalue="JUnit.FactoryPoolTest" />
-        <item itemvalue="JUnit.PrototypeComputationThreadBuilderTest.testMultiThreadedPoolSafety" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747419335764</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactor - reformat">
+      <option name="closed" value="true" />
+      <created>1747420982475</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747420982475</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +256,7 @@
     <MESSAGE value="Comparison of poool with prototype and factory" />
     <MESSAGE value="Updated tests" />
     <MESSAGE value="Imports optimization and clearAll method in pools updated so it clears everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="Imports optimization and clearAll method in pools updated so it clears everything" />
+    <MESSAGE value="Refactor - reformat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor - reformat" />
   </component>
 </project>

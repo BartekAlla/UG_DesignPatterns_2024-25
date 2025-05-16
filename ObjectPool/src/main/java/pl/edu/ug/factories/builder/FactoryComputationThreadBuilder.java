@@ -15,13 +15,10 @@ public class FactoryComputationThreadBuilder<
         C extends PrototypeComputationObject<C>>
         implements FactoryComputationThreadBuilderInterface<A, B, C> {
 
-    private FactoryComputationPool<A> aPool;
     private int countA;
 
-    private FactoryComputationPool<B> bPool;
     private int countB;
 
-    private FactoryComputationPool<C> cPool;
     private int countC;
 
     private final FactoryComputationStats stats;
@@ -36,22 +33,18 @@ public class FactoryComputationThreadBuilder<
     @Override
     public void setComponentA(FactoryComputationObject<A> factoryComputationObject, int amount) {
         this.factoryA = factoryComputationObject;
-        this.aPool = FactoryComputationPool.getInstance(factoryComputationObject);
         this.countA = amount;
     }
 
     @Override
     public void setComponentB(FactoryComputationObject<B> factoryComputationObject, int amount) {
         this.factoryB = factoryComputationObject;
-        this.bPool = FactoryComputationPool.getInstance(factoryComputationObject);
         this.countB = amount;
     }
 
     @Override
     public void setComponentC(FactoryComputationObject<C> factoryComputationObject, int amount) {
         this.factoryC = factoryComputationObject;
-        this.cPool = FactoryComputationPool.getInstance(factoryComputationObject);
-        ;
         this.countC = amount;
     }
 
