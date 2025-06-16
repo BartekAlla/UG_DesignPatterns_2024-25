@@ -1,5 +1,5 @@
 package pl.ug.edu.traits;
 
 public enum TraitType {
-    POWER, ARMOR, INTELLIGENCE, ENERGY
+    POWER, ARMOR, INTELLIGENCE, ENERGY, STEALTH
 }

@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Init final project">
+    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/decorator/ExtraPowerDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/decorator/RobotUnitDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/decorator/ShieldDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/decorator/StealthDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/mission/Mission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Stealth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/rules/TeamSizeBoostsPowerRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/rules/TeamSizeBoostsPowerRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/TraitType.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/TraitType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/model/robot/AbilityDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/model/robot/RobotSquad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/rules/AbilityRuleEngine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/rules/TraitAggregationRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/tasks/EvaluationStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/tasks/Mission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/tasks/TaskHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/traits/TraitType.class" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/traits/TraitType.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +209,7 @@
       <workItem from="1747307096786" duration="1889000" />
       <workItem from="1747374575001" duration="20766000" />
       <workItem from="1750062184763" duration="226000" />
-      <workItem from="1750062420573" duration="11075000" />
+      <workItem from="1750062420573" duration="14709000" />
     </task>
     <task id="LOCAL-00001" summary="Update without pool">
       <option name="closed" value="true" />
@@ -267,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750071748892</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update">
+      <option name="closed" value="true" />
+      <created>1750087475442</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1750087475442</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +289,7 @@
     <MESSAGE value="Refactor - reformat" />
     <MESSAGE value="Final version" />
     <MESSAGE value="Init final project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init final project" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
