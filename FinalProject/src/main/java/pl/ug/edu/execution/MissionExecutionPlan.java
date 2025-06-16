@@ -10,21 +10,6 @@ import java.util.List;
 
 public abstract class MissionExecutionPlan {
 
-//public final RobotUnit[] execute(List<Robot> available, Mission mission) {
-//    RobotUnit baseSquad = selectSquad(available, mission);
-//    if (baseSquad == null) {
-//        System.out.println("No squad can execute mission.");
-//        return null;
-//    }
-//
-//    RobotUnit decorated = applyDecorators(baseSquad);
-//
-//    if (mission.isSatisfiedBy(decorated)) {
-//        return new RobotUnit[]{baseSquad, decorated};
-//    } else {
-//        return null;
-//    }
-//}
 public final RobotUnit[] execute(List<Robot> available, Mission mission) {
     RobotUnit decoratedSquad = selectSquad(available, mission);
 
@@ -33,7 +18,6 @@ public final RobotUnit[] execute(List<Robot> available, Mission mission) {
         return null;
     }
 
-    // Odtwórz bazowy squad dla porównania (np. do prezentacji)
     RobotUnit base = decoratedSquad instanceof RobotUnitDecorator d
             ? d.getDecorated()
             : decoratedSquad;
