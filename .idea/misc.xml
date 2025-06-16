@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/Singleton/pom.xml" />
         <option value="$PROJECT_DIR$/ObjectPool/pom.xml" />
+        <option value="$PROJECT_DIR$/FinalProject/pom.xml" />
       </list>
     </option>
   </component>
