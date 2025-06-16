@@ -46,4 +46,7 @@ public class RobotSquad implements RobotUnit {
     public int getMemberCount() {
         return members.size();
     }
+    public List<RobotUnit> getMembers() {
+        return members;
+    }
 }

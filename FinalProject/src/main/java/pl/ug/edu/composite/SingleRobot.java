@@ -32,4 +32,7 @@ public class SingleRobot implements RobotUnit{
     public String getName() {
         return robot.getName();
     }
+    public Robot getRobot() {
+        return robot;
+    }
 }

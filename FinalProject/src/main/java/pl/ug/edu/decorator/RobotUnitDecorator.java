@@ -26,4 +26,7 @@ public abstract class RobotUnitDecorator implements RobotUnit {
     public String getName() {
         return decorated.getName();
     }
+    public RobotUnit getDecorated() {
+        return decorated;
+    }
 }
