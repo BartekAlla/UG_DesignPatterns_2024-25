@@ -4,31 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Final version">
-      <change afterPath="$PROJECT_DIR$/FinalProject/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/RobotSquad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/RobotUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/SingleRobot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/model/robot/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/model/robot/RobotBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/model/robot/RobotPrototypeRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/rules/ArmorBoostsEnergyRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/rules/EnergyBoostsAllOtherTraitsRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/rules/EnhancementRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/rules/IntelligenceBoostsEnergyRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/rules/StrengthBoostsArmorRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/rules/TeamSizeBoostsPowerRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Armor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/BaseTrait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Energy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Intelligence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Power.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Trait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/TraitType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Init final project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/rules/TeamSizeBoostsPowerRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/rules/TeamSizeBoostsPowerRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/model/robot/AbilityDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/model/robot/RobotSquad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/rules/AbilityRuleEngine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/rules/TraitAggregationRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/tasks/EvaluationStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/tasks/Mission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/tasks/TaskHandler.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +209,7 @@
       <workItem from="1747307096786" duration="1889000" />
       <workItem from="1747374575001" duration="20766000" />
       <workItem from="1750062184763" duration="226000" />
-      <workItem from="1750062420573" duration="8536000" />
+      <workItem from="1750062420573" duration="11075000" />
     </task>
     <task id="LOCAL-00001" summary="Update without pool">
       <option name="closed" value="true" />
@@ -272,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747433632054</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Init final project">
+      <option name="closed" value="true" />
+      <created>1750071748892</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750071748892</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +280,7 @@
     <MESSAGE value="Imports optimization and clearAll method in pools updated so it clears everything" />
     <MESSAGE value="Refactor - reformat" />
     <MESSAGE value="Final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final version" />
+    <MESSAGE value="Init final project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init final project" />
   </component>
 </project>

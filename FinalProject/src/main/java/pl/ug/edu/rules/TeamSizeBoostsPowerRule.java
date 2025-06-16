@@ -6,7 +6,7 @@ import pl.ug.edu.traits.TraitType;
 public class TeamSizeBoostsPowerRule implements EnhancementRule {
     @Override
     public boolean condition(RobotSquad squad) {
-        return squad.getMemberCount() > 5;
+        return squad.getMemberCount() >= 5;
     }
 
     @Override
