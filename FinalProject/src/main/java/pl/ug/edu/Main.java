@@ -10,10 +10,7 @@ import pl.ug.edu.model.robot.RobotBuilder;
 import pl.ug.edu.model.robot.RobotPrototypeRegistry;
 import pl.ug.edu.traits.TraitType;
 
-import java.util.ArrayList;
-import java.util.EnumMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static pl.ug.edu.execution.MissionExecutionPlan.printSquadSummary;
 
@@ -50,11 +47,23 @@ public class Main {
         registry.registerPrototype("heavy", heavyProto);
 
         List<Robot> robots = new ArrayList<>();
+        robots.add(registry.createClone("assault"));
+        robots.add(registry.createClone("assault"));
+        robots.add(registry.createClone("assault"));
+        robots.add(registry.createClone("heavy"));
+        robots.add(registry.createClone("heavy"));
+        robots.add(registry.createClone("scout"));
+        robots.add(registry.createClone("assault"));
+        robots.add(registry.createClone("heavy"));
+        robots.add(registry.createClone("scout"));
         robots.add(registry.createClone("scout"));
         robots.add(registry.createClone("scout"));
         robots.add(registry.createClone("assault"));
         robots.add(registry.createClone("heavy"));
+        robots.add(registry.createClone("assault"));
+        robots.add(registry.createClone("scout"));
         robots.add(registry.createClone("heavy"));
+
 
         System.out.println("=== Available Robots ===");
         for (Robot r : robots) {
