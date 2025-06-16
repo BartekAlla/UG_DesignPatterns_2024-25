@@ -10,7 +10,7 @@ public class StealthDecorator extends RobotUnitDecorator {
     private final double stealthBonus;
 
     public StealthDecorator(RobotUnit decorated) {
-        this(decorated, 100.0);
+        this(decorated, 1);
     }
 
     public StealthDecorator(RobotUnit decorated, double bonus) {

@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/MissionExecutionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/MissionExecutionPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/strategy/OptimalSelectionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/strategy/OptimalSelectionStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +189,7 @@
       <workItem from="1750062184763" duration="226000" />
       <workItem from="1750062420573" duration="24090000" />
       <workItem from="1750105001350" duration="2659000" />
-      <workItem from="1750107824661" duration="953000" />
+      <workItem from="1750107824661" duration="2387000" />
     </task>
     <task id="LOCAL-00001" summary="Update without pool">
       <option name="closed" value="true" />
@@ -277,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750108673017</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update">
+      <option name="closed" value="true" />
+      <created>1750109300545</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1750109300545</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
