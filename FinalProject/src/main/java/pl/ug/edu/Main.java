@@ -86,11 +86,15 @@ public class Main {
         System.out.println();
 
         MissionExecutionPlan brutePlan = new BruteMissionPlan();
-        RobotUnit bruteResult = brutePlan.execute(robots, destroyBase);
-        printSquadSummary("BruteMissionPlan", bruteResult);
+        RobotUnit[] bruteResult = brutePlan.execute(robots, destroyBase);
+        if (bruteResult != null) {
+            printSquadSummary("BruteMissionPlan", bruteResult[0], bruteResult[1]);
+        }
 
         MissionExecutionPlan optimalPlan = new OptimalMissionPlan();
-        RobotUnit optimalResult = optimalPlan.execute(robots, destroyBase);
-        printSquadSummary("OptimalMissionPlan", optimalResult);
+        RobotUnit[] optimalResult = optimalPlan.execute(robots, destroyBase);
+        if (optimalResult != null) {
+            printSquadSummary("OptimalMissionPlan", optimalResult[0], optimalResult[1]);
+        }
     }
 }

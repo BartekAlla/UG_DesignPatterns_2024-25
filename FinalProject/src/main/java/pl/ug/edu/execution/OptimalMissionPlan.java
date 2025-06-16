@@ -14,18 +14,13 @@ import pl.ug.edu.traits.TraitType;
 import java.util.List;
 
 public class OptimalMissionPlan extends MissionExecutionPlan {
-//    @Override
-//    protected List<Robot> selectRobots(List<Robot> available, Mission mission) {
-//        RobotUnit squad = new OptimalSelectionStrategy().selectSquad(available, mission);
-//        return extractRobotsFromUnit(squad);
-//    }
+
     @Override
     protected RobotUnit selectSquad(List<Robot> available, Mission mission) {
         return new OptimalSelectionStrategy().selectSquad(available, mission);
     }
 
     @Override
-//    protected RobotUnit applyDecorators(RobotSquad squad) {
     protected RobotUnit applyDecorators(RobotUnit squad) {
         RobotUnit result = squad;
 
