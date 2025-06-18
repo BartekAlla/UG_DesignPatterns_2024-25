@@ -78,6 +78,7 @@ public class Main {
         missionRequirements.put(TraitType.ARMOR, 1000.0);
         missionRequirements.put(TraitType.ENERGY, 800.0);
         missionRequirements.put(TraitType.INTELLIGENCE, 1000.0);
+        missionRequirements.put(TraitType.STEALTH, 1.0);
 
         Mission destroyBase = new Mission("Destroy Reactor Core", missionRequirements);
 
