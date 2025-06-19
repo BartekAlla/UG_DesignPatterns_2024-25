@@ -28,9 +28,6 @@ public abstract class MissionExecutionPlan {
 
     protected abstract RobotUnit selectSquad(List<Robot> available, Mission mission);
 
-    protected RobotUnit applyDecorators(RobotUnit squad) {
-        return squad;
-    }
 
     public static void printSquadSummary(String title, RobotUnit base, RobotUnit decorated) {
         System.out.println("=== " + title + " ===\n");

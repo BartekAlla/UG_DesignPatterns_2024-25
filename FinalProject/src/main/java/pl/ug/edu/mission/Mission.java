@@ -19,9 +19,6 @@ public class Mission {
         return name;
     }
 
-    public Map<TraitType, Double> getRequiredTraits() {
-        return requiredTraits;
-    }
 
     public boolean isSatisfiedBy(RobotUnit unit) {
         for (Map.Entry<TraitType, Double> entry : requiredTraits.entrySet()) {

@@ -18,7 +18,5 @@ public class RobotPrototypeRegistry {
         return prototype.copy();
     }
 
-    public boolean hasPrototype(String key) {
-        return registry.containsKey(key);
-    }
+
 }

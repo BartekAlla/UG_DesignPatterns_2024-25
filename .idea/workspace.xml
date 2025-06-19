@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/FinalProject/src/test/java/FunctionalTests.java" afterDir="false" />
+    <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/RobotSquad.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/RobotSquad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/RobotUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/RobotUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/SingleRobot.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/SingleRobot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/decorator/RobotUnitDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/decorator/RobotUnitDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/BruteMissionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/BruteMissionPlan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/MissionExecutionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/MissionExecutionPlan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/OptimalMissionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/OptimalMissionPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/model/robot/RobotBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/model/robot/RobotBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/strategy/BruteSelectionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/strategy/BruteSelectionStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/strategy/OptimalSelectionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/strategy/OptimalSelectionStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Stealth.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Stealth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Trait.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Trait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/src/test/java/structural/DecoratorEffectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/test/java/structural/DecoratorEffectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/mission/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/mission/Mission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/model/robot/RobotPrototypeRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/model/robot/RobotPrototypeRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/execution/MissionExecutionPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/execution/MissionExecutionPlan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/strategy/OptimalSelectionStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/strategy/OptimalSelectionStrategy.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +118,7 @@
       <recent name="C:\Users\balla\IdeaProjects\UG_DesignPatterns_2024-25\ObjectPool" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FunctionalTests.missionShouldPassOnlyWithDecorator">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.ug.edu.Main" />
       <module name="FinalProject" />
@@ -179,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in FinalProject" />
         <item itemvalue="JUnit.FunctionalTests.missionShouldPassOnlyWithDecorator" />
         <item itemvalue="JUnit.FunctionalTests.singleRobotCanPassMission" />
         <item itemvalue="JUnit.FunctionalTests.missionPlanShouldNotBeAccomplished" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.All in FinalProject" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +206,7 @@
       <workItem from="1750105001350" duration="2659000" />
       <workItem from="1750107824661" duration="4983000" />
       <workItem from="1750279413511" duration="3165000" />
-      <workItem from="1750347188748" duration="3624000" />
+      <workItem from="1750347188748" duration="4779000" />
     </task>
     <task id="LOCAL-00001" summary="Update without pool">
       <option name="closed" value="true" />
@@ -343,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750279854619</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Refactoring">
+      <option name="closed" value="true" />
+      <created>1750359652716</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1750359652716</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +360,7 @@
     <MESSAGE value="Init final project" />
     <MESSAGE value="Changed rules to decorator" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
 </project>
