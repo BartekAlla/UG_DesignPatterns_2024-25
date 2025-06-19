@@ -6,6 +6,8 @@ import java.util.Map;
 
 public interface RobotUnit {
     double getTraitValue(TraitType traitType);
+
     Map<TraitType, Double> getAllTraitValues();
+
     String getName();
 }

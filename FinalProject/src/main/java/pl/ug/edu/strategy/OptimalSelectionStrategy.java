@@ -11,36 +11,35 @@ import pl.ug.edu.mission.Mission;
 import pl.ug.edu.model.robot.Robot;
 import pl.ug.edu.traits.TraitType;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class OptimalSelectionStrategy implements SquadSelectionStrategy {
 
-@Override
-public RobotUnit selectSquad(List<Robot> availableRobots, Mission mission) {
-    int n = availableRobots.size();
-    RobotUnit best = null;
+    @Override
+    public RobotUnit selectSquad(List<Robot> availableRobots, Mission mission) {
+        int n = availableRobots.size();
+        RobotUnit best = null;
 
-    for (int i = 1; i < (1 << n); i++) {
-        RobotSquad squad = new RobotSquad("OptimalSquad");
+        for (int i = 1; i < (1 << n); i++) {
+            RobotSquad squad = new RobotSquad("OptimalSquad");
 
-        for (int j = 0; j < n; j++) {
-            if ((i & (1 << j)) != 0) {
-                squad.addMember(new SingleRobot(availableRobots.get(j)));
+            for (int j = 0; j < n; j++) {
+                if ((i & (1 << j)) != 0) {
+                    squad.addMember(new SingleRobot(availableRobots.get(j)));
+                }
+            }
+
+            RobotUnit decorated = applyDecorators(squad);
+
+            if (mission.isSatisfiedBy(decorated)) {
+                if (best == null || getMemberCount(decorated) < getMemberCount(best)) {
+                    best = decorated;
+                }
             }
         }
 
-        RobotUnit decorated = applyDecorators(squad);
-
-        if (mission.isSatisfiedBy(decorated)) {
-            if (best == null || getMemberCount(decorated) < getMemberCount(best)) {
-                best = decorated;
-            }
-        }
+        return best;
     }
-
-    return best;
-}
 
     private RobotUnit applyDecorators(RobotUnit squad) {
         RobotUnit result = squad;

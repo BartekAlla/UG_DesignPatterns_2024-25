@@ -1,6 +1,5 @@
 package pl.ug.edu.execution;
 
-import pl.ug.edu.composite.RobotSquad;
 import pl.ug.edu.composite.RobotUnit;
 import pl.ug.edu.decorator.ExtraPowerDecorator;
 import pl.ug.edu.decorator.ShieldDecorator;
@@ -12,7 +11,7 @@ import pl.ug.edu.traits.TraitType;
 
 import java.util.List;
 
-public class BruteMissionPlan extends MissionExecutionPlan{
+public class BruteMissionPlan extends MissionExecutionPlan {
 
     @Override
     protected RobotUnit selectSquad(List<Robot> available, Mission mission) {

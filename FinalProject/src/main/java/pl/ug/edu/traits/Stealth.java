@@ -1,6 +1,6 @@
 package pl.ug.edu.traits;
 
-public class Stealth extends BaseTrait{
+public class Stealth extends BaseTrait {
     public Stealth(double value) {
         super(value);
     }

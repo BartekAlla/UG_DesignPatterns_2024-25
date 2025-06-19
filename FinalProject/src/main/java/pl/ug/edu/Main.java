@@ -10,7 +10,10 @@ import pl.ug.edu.model.robot.RobotBuilder;
 import pl.ug.edu.model.robot.RobotPrototypeRegistry;
 import pl.ug.edu.traits.TraitType;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.EnumMap;
+import java.util.List;
+import java.util.Map;
 
 import static pl.ug.edu.execution.MissionExecutionPlan.printSquadSummary;
 

@@ -1,13 +1,11 @@
 package pl.ug.edu.execution;
 
-import pl.ug.edu.composite.RobotSquad;
 import pl.ug.edu.composite.RobotUnit;
 import pl.ug.edu.decorator.ExtraPowerDecorator;
 import pl.ug.edu.decorator.ShieldDecorator;
 import pl.ug.edu.decorator.StealthDecorator;
 import pl.ug.edu.mission.Mission;
 import pl.ug.edu.model.robot.Robot;
-import pl.ug.edu.strategy.BruteSelectionStrategy;
 import pl.ug.edu.strategy.OptimalSelectionStrategy;
 import pl.ug.edu.traits.TraitType;
 

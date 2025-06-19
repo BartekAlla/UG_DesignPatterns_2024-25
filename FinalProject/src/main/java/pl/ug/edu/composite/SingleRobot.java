@@ -7,7 +7,7 @@ import pl.ug.edu.traits.TraitType;
 import java.util.EnumMap;
 import java.util.Map;
 
-public class SingleRobot implements RobotUnit{
+public class SingleRobot implements RobotUnit {
     private final Robot robot;
 
     public SingleRobot(Robot robot) {
@@ -19,6 +19,7 @@ public class SingleRobot implements RobotUnit{
         Trait trait = robot.getTrait(traitType);
         return trait != null ? trait.getValue() : 0;
     }
+
     @Override
     public Map<TraitType, Double> getAllTraitValues() {
         Map<TraitType, Double> result = new EnumMap<>(TraitType.class);
@@ -32,6 +33,7 @@ public class SingleRobot implements RobotUnit{
     public String getName() {
         return robot.getName();
     }
+
     public Robot getRobot() {
         return robot;
     }

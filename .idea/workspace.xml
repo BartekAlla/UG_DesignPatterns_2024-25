@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1c2fff7-52a4-4dbe-9429-83d657e354c2" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/FinalProject/src/test/java/FunctionalTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/RobotSquad.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/RobotSquad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/RobotUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/RobotUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/SingleRobot.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/composite/SingleRobot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/decorator/RobotUnitDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/decorator/RobotUnitDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/BruteMissionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/BruteMissionPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/MissionExecutionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/MissionExecutionPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/OptimalMissionPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/execution/OptimalMissionPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/model/robot/RobotBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/model/robot/RobotBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/strategy/BruteSelectionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/strategy/BruteSelectionStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/strategy/OptimalSelectionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/strategy/OptimalSelectionStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Stealth.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Stealth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Trait.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/main/java/pl/ug/edu/traits/Trait.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalProject/src/test/java/structural/DecoratorEffectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/src/test/java/structural/DecoratorEffectTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/execution/MissionExecutionPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/execution/MissionExecutionPlan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/strategy/BruteSelectionStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/strategy/BruteSelectionStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/strategy/OptimalSelectionStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/FinalProject/target/classes/pl/ug/edu/strategy/OptimalSelectionStrategy.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,64 +65,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ObjectPoolMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.pl.edu.ug.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.pl.ug.edu.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in FinalProject.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in Singleton.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ComputationalPoolTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DecoratorEffectTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DecoratorEffectTest.orbitalStrikeShouldAddStrikeCapability.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DecoratorEffectTest.shieldBoostShouldIncreaseArmor.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FactoryComputationThreadBuildTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FactoryComputationThreadBuildTest.testBuildThreadAndStats.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FactoryPoolTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrototypeCircleCircumferenceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrototypeComputationThreadBuilderTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrototypeComputationThreadBuilderTest.testBuildThreadAndStats.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrototypeComputationThreadBuilderTest.testMultiThreadedPoolSafety.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrototypeCylinderVolumeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrototypePoolTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrototypeSphereSurfaceAreaTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RobotBuilderTest.builderShouldBuildRobotWithCorrectTraits.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RobotPrototypeRegistryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RobotSquadAggregationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SerializableSingletonTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StrategyTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StrategyTest.optimalShouldReturnSmallerSquadThanBrute.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TemplateMethodTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TemplateMethodTest.missionPlanShouldReturnValidDecoratedSquad.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ThreadSafeSingletonTest.compareSingletonPerformance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ThreadSafeSingletonTest.testSingletonConcurrency.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/balla/IdeaProjects/UG_DesignPatterns_2024-25&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Application.ObjectPoolMain.executor": "Run",
+    "Application.pl.edu.ug.Main.executor": "Run",
+    "Application.pl.ug.edu.Main.executor": "Run",
+    "JUnit.All in FinalProject.executor": "Run",
+    "JUnit.All in Singleton.executor": "Run",
+    "JUnit.ComputationalPoolTests.executor": "Run",
+    "JUnit.DecoratorEffectTest.executor": "Run",
+    "JUnit.DecoratorEffectTest.orbitalStrikeShouldAddStrikeCapability.executor": "Run",
+    "JUnit.DecoratorEffectTest.shieldBoostShouldIncreaseArmor.executor": "Run",
+    "JUnit.FactoryComputationThreadBuildTest.executor": "Run",
+    "JUnit.FactoryComputationThreadBuildTest.testBuildThreadAndStats.executor": "Run",
+    "JUnit.FactoryPoolTest.executor": "Run",
+    "JUnit.FunctionalTests.missionPlanShouldNotBeAccomplished.executor": "Run",
+    "JUnit.FunctionalTests.missionShouldPassOnlyWithDecorator.executor": "Run",
+    "JUnit.FunctionalTests.singleRobotCanPassMission.executor": "Run",
+    "JUnit.PrototypeCircleCircumferenceTest.executor": "Run",
+    "JUnit.PrototypeComputationThreadBuilderTest.executor": "Run",
+    "JUnit.PrototypeComputationThreadBuilderTest.testBuildThreadAndStats.executor": "Run",
+    "JUnit.PrototypeComputationThreadBuilderTest.testMultiThreadedPoolSafety.executor": "Run",
+    "JUnit.PrototypeCylinderVolumeTest.executor": "Run",
+    "JUnit.PrototypePoolTest.executor": "Run",
+    "JUnit.PrototypeSphereSurfaceAreaTest.executor": "Run",
+    "JUnit.RobotBuilderTest.builderShouldBuildRobotWithCorrectTraits.executor": "Run",
+    "JUnit.RobotPrototypeRegistryTest.executor": "Run",
+    "JUnit.RobotSquadAggregationTest.executor": "Run",
+    "JUnit.SerializableSingletonTest.executor": "Run",
+    "JUnit.StrategyTest.executor": "Run",
+    "JUnit.StrategyTest.optimalShouldReturnSmallerSquadThanBrute.executor": "Run",
+    "JUnit.TemplateMethodTest.executor": "Run",
+    "JUnit.TemplateMethodTest.missionPlanShouldReturnValidDecoratedSquad.executor": "Run",
+    "JUnit.ThreadSafeSingletonTest.compareSingletonPerformance.executor": "Run",
+    "JUnit.ThreadSafeSingletonTest.testSingletonConcurrency.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/balla/IdeaProjects/UG_DesignPatterns_2024-25",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\balla\IdeaProjects\UG_DesignPatterns_2024-25\ObjectPool" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.FunctionalTests.missionShouldPassOnlyWithDecorator">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.ug.edu.Main" />
       <module name="FinalProject" />
@@ -133,48 +147,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StrategyTest.optimalShouldReturnSmallerSquadThanBrute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FunctionalTests.missionPlanShouldNotBeAccomplished" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="behavioral.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="behavioral" />
-      <option name="MAIN_CLASS_NAME" value="behavioral.StrategyTest" />
-      <option name="METHOD_NAME" value="optimalShouldReturnSmallerSquadThanBrute" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FunctionalTests" />
+      <option name="METHOD_NAME" value="missionPlanShouldNotBeAccomplished" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemplateMethodTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FunctionalTests.missionShouldPassOnlyWithDecorator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="behavioral.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="behavioral" />
-      <option name="MAIN_CLASS_NAME" value="behavioral.TemplateMethodTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FunctionalTests" />
+      <option name="METHOD_NAME" value="missionShouldPassOnlyWithDecorator" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemplateMethodTest.missionPlanShouldReturnValidDecoratedSquad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FunctionalTests.singleRobotCanPassMission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="behavioral.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="behavioral" />
-      <option name="MAIN_CLASS_NAME" value="behavioral.TemplateMethodTest" />
-      <option name="METHOD_NAME" value="missionPlanShouldReturnValidDecoratedSquad" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FunctionalTests" />
+      <option name="METHOD_NAME" value="singleRobotCanPassMission" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -182,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FunctionalTests.missionShouldPassOnlyWithDecorator" />
+        <item itemvalue="JUnit.FunctionalTests.singleRobotCanPassMission" />
+        <item itemvalue="JUnit.FunctionalTests.missionPlanShouldNotBeAccomplished" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in FinalProject" />
-        <item itemvalue="JUnit.TemplateMethodTest.missionPlanShouldReturnValidDecoratedSquad" />
-        <item itemvalue="JUnit.TemplateMethodTest" />
-        <item itemvalue="JUnit.StrategyTest.optimalShouldReturnSmallerSquadThanBrute" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +212,8 @@
       <workItem from="1750062420573" duration="24090000" />
       <workItem from="1750105001350" duration="2659000" />
       <workItem from="1750107824661" duration="4983000" />
-      <workItem from="1750279413511" duration="317000" />
+      <workItem from="1750279413511" duration="3165000" />
+      <workItem from="1750347188748" duration="3624000" />
     </task>
     <task id="LOCAL-00001" summary="Update without pool">
       <option name="closed" value="true" />
@@ -337,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750279727446</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update">
+      <option name="closed" value="true" />
+      <created>1750279854619</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1750279854619</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

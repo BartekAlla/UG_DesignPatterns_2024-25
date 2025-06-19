@@ -1,6 +1,6 @@
 package pl.ug.edu.composite;
 
-import pl.ug.edu.traits.*;
+import pl.ug.edu.traits.TraitType;
 
 import java.util.ArrayList;
 import java.util.EnumMap;
@@ -46,6 +46,7 @@ public class RobotSquad implements RobotUnit {
     public int getMemberCount() {
         return members.size();
     }
+
     public List<RobotUnit> getMembers() {
         return members;
     }

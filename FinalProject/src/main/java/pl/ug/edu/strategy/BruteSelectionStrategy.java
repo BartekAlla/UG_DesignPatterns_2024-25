@@ -14,28 +14,28 @@ import java.util.List;
 
 public class BruteSelectionStrategy implements SquadSelectionStrategy {
 
-@Override
-public RobotUnit selectSquad(List<Robot> availableRobots, Mission mission) {
-    int n = availableRobots.size();
+    @Override
+    public RobotUnit selectSquad(List<Robot> availableRobots, Mission mission) {
+        int n = availableRobots.size();
 
-    for (int i = 1; i < (1 << n); i++) {
-        RobotSquad squad = new RobotSquad("BruteSquad");
+        for (int i = 1; i < (1 << n); i++) {
+            RobotSquad squad = new RobotSquad("BruteSquad");
 
-        for (int j = 0; j < n; j++) {
-            if ((i & (1 << j)) != 0) {
-                squad.addMember(new SingleRobot(availableRobots.get(j)));
+            for (int j = 0; j < n; j++) {
+                if ((i & (1 << j)) != 0) {
+                    squad.addMember(new SingleRobot(availableRobots.get(j)));
+                }
+            }
+
+            RobotUnit decorated = applyDecorators(squad);
+
+            if (mission.isSatisfiedBy(decorated)) {
+                return decorated;
             }
         }
 
-        RobotUnit decorated = applyDecorators(squad);
-
-        if (mission.isSatisfiedBy(decorated)) {
-            return decorated;
-        }
+        return null;
     }
-
-    return null;
-}
 
     private RobotUnit applyDecorators(RobotUnit squad) {
         RobotUnit result = squad;

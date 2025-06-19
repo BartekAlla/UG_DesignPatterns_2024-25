@@ -28,6 +28,7 @@ public class DecoratorEffectTest {
         assertTrue(decorated.getAllTraitValues().containsKey(TraitType.STEALTH));
         assertEquals(1.0, decorated.getTraitValue(TraitType.STEALTH), 0.001);
     }
+
     @Test
     void shieldBoostShouldIncreaseArmor() {
         Robot r = new RobotBuilder("Tank").withArmor(900).build();
@@ -40,6 +41,7 @@ public class DecoratorEffectTest {
 
         assertTrue(boosted > base);
     }
+
     @Test
     void orbitalStrikeShouldAddStrikeCapability() {
         RobotSquad squad = new RobotSquad("OrbitalSquad");
