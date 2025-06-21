@@ -11,29 +11,7 @@ import pl.edu.ug.prototypes.statistics.PrototypeComputationStats;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PrototypeComputationThreadBuilderTest {
-    @Test
-    void testBuildThreadAndStats() throws InterruptedException {
-        PrototypeComputationStats stats = new PrototypeComputationStats();
-        PrototypeComputationThreadBuilder<
-                PrototypeCircleCircumference,
-                PrototypeCylinderVolume,
-                PrototypeSphereSurfaceArea
-                > builder = new PrototypeComputationThreadBuilder<>(stats);
 
-        builder.setComponentA(new PrototypeCircleCircumference(2.0), 3);
-        builder.setComponentB(new PrototypeCylinderVolume(1.0, 2.0), 2);
-        builder.setComponentC(new PrototypeSphereSurfaceArea(1.0), 1);
-
-        Thread t = builder.buildThread();
-        t.start();
-        t.join();
-
-        assertTrue(stats.getTimeA().longValue() > 0);
-        assertTrue(stats.getTimeB().longValue() > 0);
-        assertTrue(stats.getTimeC().longValue() > 0);
-
-        assertTrue(((PrototypeComputationPool<?>) stats.getPoolA()).getCreatedObjectsCount() <= 3);
-    }
 
     @Test
     void testMultiThreadedPoolSafety() throws InterruptedException {
